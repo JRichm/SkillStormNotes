@@ -1,0 +1,25 @@
+Access Modifiers
+	Restring visibility to class members
+	most access modifiers can be applied to 
+		classes
+		methods
+		variables
+		constructors
+	
+	public, protected, private
+		no modifier also called default or package private
+
+	public
+		accessible anywhere in the application
+	
+	protected
+		accessible within the package and any subclasses
+
+	no modifier
+		accessible only within the package
+
+	private 
+		accessible only within the class
+
+	
+		
