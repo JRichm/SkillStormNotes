@@ -1,0 +1,16 @@
+Method overriding
+	Method with the same signature as the one in a parent class
+		public void speak() {}
+
+	allows us to change behavior in a specialized class
+	no matter the reference type, the right method is callled
+		- thanks to virtual method invocation
+	
+	takes precedence over the superclass method	
+		note: only non-static methods can be overriden
+
+		class Animal
+			void speak() {}
+	
+		class Dog extends Animal
+			void speak() {}
