@@ -1,0 +1,51 @@
+constructors in java
+	constructors initialize an objects state	
+	calling the constructor creates an object at runtime
+		- new keyword
+		
+	java provides default constructor
+		only if you haven't provided your own
+
+	you can define many constructors
+		multiple constructors allowed
+		one is required
+		constructor overloading
+
+methods in java
+	method declaration
+		public void go(int x, String y) { }
+
+	method invocation
+		object.go(10, "a");	
+		arguments are what we are passing to the parameters
+
+
+	public void go() {}				object.go();
+	public void go(int speed) {}			object.go(100);
+	public void go(int x, String y) {}		object.go(10, "A");
+
+	static methods
+		static methods are called without an object
+			Math.Random();
+			Math.pow(2,31);
+			Math.tan(90;
+
+		declare the mthod with the static modifier
+
+
+	return types
+		every method has a return type
+		methods with non-void return type
+			must declare another return type
+			
+			public int go() {
+				return 5;
+			}
+
+		code will not compile without a return
+
+	
+
+
+		
+	

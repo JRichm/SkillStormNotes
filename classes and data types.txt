@@ -1,0 +1,46 @@
+classes in java
+	classes are blueprints used to define objects
+		real world objects
+		application compontents
+
+	class members include:
+		variables
+		methods
+		contructors
+		
+	how they are made
+
+
+data types in java
+	java is a strongly typed language
+		meaning we have to specifically say which type of variable when we are declaring
+	
+	java supports primitive data types
+		numeric(whole)
+		numeric(decimal
+		text 
+		true/false
+		
+		these primitive data types are
+			byte
+			short
+			int
+			long
+			float
+			double
+			char
+			boolean
+	
+	java also supports non primitive data types
+		any class you want
+		create your own types
+			Vehicle
+			Engine
+
+		String
+
+
+	arrays
+		stores multiple values in a single reference variable
+		store in continuous sequention block of memory
+		access array item by index

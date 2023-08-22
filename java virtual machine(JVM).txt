@@ -1,0 +1,29 @@
+java development kit (JDK) compiles code
+java virtual machine (JVM) executes code
+
+	example.java --> javac --> example.class ---> java ---> jvm --> 001011100 --> PC
+
+when opening a java file, it will open up the jvm
+the jvm will look for a class that has a main method
+	 this must be > public static void main(String[] args) <
+		this is the entry point of our application
+
+
+automatic memory management
+
+	stores data in the stack and the heap
+		stack
+			method calls
+			variables declared in methods
+			reference variables
+			cleaned up as method completes
+		heap
+			objects
+			instance variables
+			JVM cleans up objects not in use
+				or ojbects that arent pointed at
+
+		
+		when we start up our application, the jvm will automatically create a stack and heap spaces
+		the stack keeps 
+		

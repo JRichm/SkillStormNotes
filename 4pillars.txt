@@ -1,0 +1,24 @@
+game plan
+
+	object oriented programming
+		reuse software in objects
+		all of our code is written in classes
+			used as blueprints
+		used is lots of programming languages
+	
+		four concepts
+			encapsulation
+				take everything about an object, and put it in a class
+			inheritance
+				reuse classes
+				child classes can act like parent class
+			abstraction
+				when we create a parent class that uses some common behavior
+			polymorphism
+				a way for object to change their behavior under different circumstances
+				 
+				
+	
+	procedural programming
+		have to write code so it can be read from top to bottom
+		lots of duplicate code

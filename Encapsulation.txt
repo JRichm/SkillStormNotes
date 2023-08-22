@@ -1,0 +1,16 @@
+encapsulation
+	wraping related state/behavior in a single unit
+		Person
+		   int age;
+		   String name;
+		   Computer comp;
+		   public void code() {}
+
+		Computer 
+		   int ram;
+	 	   String model;
+		   public void run() {}
+
+	in this example, because we are creating a computer object for each person,
+	each person has a "Has A" relationship to a computer.
+		every Person "Has A" Computer
