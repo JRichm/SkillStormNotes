@@ -1,0 +1,13 @@
+Variables can be shadowed
+parent defines variable x and so does child
+child variable x shadows the parent variable
+variables can be distinguished using super and this
+
+	super.x
+	this.x
+
+local variables can shadow instance variables
+
+	public void setX(int x) {
+		this.x = x;
+	}
