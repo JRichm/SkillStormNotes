@@ -1,0 +1,20 @@
+inheritance
+	passing down state and behavior from one class to another
+	super-class / sub-class relationship
+	parent-child relationship
+
+		Cucumber 
+		   int weight;
+		   public void grow() {}
+	
+		Pickle
+		   String flavor;
+	
+	facilitates code reusability
+	extensibility to change existing classes
+	
+		Class Cucumber {}
+		
+		Class Picke extends Cucumber {}
+
+	

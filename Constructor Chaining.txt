@@ -1,0 +1,12 @@
+Every class in Java inherits from java.lang.Object
+without defining a superclass, extends Object is implied
+the first line of a constructor must be a call to super or this
+	- super()
+
+calling a constructor causes a chain of constructors to fire
+
+	public JavaDeveloper() {}
+
+	public JavaDeveloper(String name) {
+		this();
+	}
