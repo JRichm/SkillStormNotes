@@ -1,0 +1,17 @@
+Packages
+	packages are folder that bundles related classes
+	typically, "reverse" domain naim
+	com.example.project
+	
+	packages provide a fully qualified class name
+		avoids namiong collisions
+		com.example.project.Message != net.tutorial.Message
+
+	packages are a hierarchical structure
+	the first line of a class must be the package statement
+		says which package the class is a part of
+		you can set it to the default class, which is considered bad practice,
+			you dont have to provide the package statement
+
+	you can import classes into another class
+		use the import statement

@@ -14,3 +14,11 @@ encapsulation
 	in this example, because we are creating a computer object for each person,
 	each person has a "Has A" relationship to a computer.
 		every Person "Has A" Computer
+
+	all of the information about the person will be inside the person class
+	all of the information about the computer will be inside the computer class
+
+	access control
+	access modifiers
+	getters & setters
+	
