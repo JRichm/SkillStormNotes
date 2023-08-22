@@ -1,0 +1,21 @@
+polymorphism
+	the ability for objects to be used very flexibly
+	convariance and virtual method invocation
+		- how java handles overridden methods
+		
+			class Animal void Speak() {}
+				     |
+				     V
+			class Dog void Speak () {}
+
+	covariant assignment must pass the IS-A check
+		
+		Animal animal = new Dog();
+			
+		public void pet(Animal animal) {
+			animal.speak();
+		}
+
+
+virtual method invocation
+	
