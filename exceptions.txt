@@ -1,0 +1,41 @@
+exceptions
+	exeptional events that occur in the code at runtime
+		reading a corrupted file
+		network connection failure
+		division by zero
+		calling method without an object
+	
+	every exception has a type
+		IOException	
+		ConnectException
+		ArithmeticException
+		NullPointerException
+		
+		throwable
+			exception
+				runtime exception
+
+			error
+
+		checked exception inherrits from the exception class
+			the JVM requires us to handle all of these exceptions before running our application	
+
+		unchecked exceptions dirrive from runtime exception
+			we dont have handle these for the program to run, but may cause problems while running
+			usually come up from not following proper coding practices
+
+		
+	how the JVM handles exceptions
+		exception is created inside the heap
+		jvm looks for a handler inside the method that created the exception
+		if none are found, the jvm will work its way backwards towards the main method to see if there is a handler for the exception
+		if no handlers are found for the exception, the stack is finished
+		the jvm will continue because there may be other stacks
+		
+		if the jvm finds a handler for the exception, the stack may continue
+		the handler it is looking for is a try/catch block
+			try {
+			   // risky code
+			} catch(ConnectException e) {
+			   // recovery proceture
+			}

@@ -1,0 +1,24 @@
+hashmap
+	a class in collections API that stores key-value pairs
+	the key is used to identify the value
+	social security number maps to a US citizen
+	key s must be unique, but there's no restrictions on values
+	putting a value with the same key updates the value for that key
+	underneath, HashMap stores "Entry" objects in an array
+	your objects hashcode helps calculate the array index to store it in
+	hashmap collision occur when the calculation for 2 indexes yield the same value
+		java appends the entry to a linkedlist 
+
+	if the linkedList gets too long, read operations are much slower
+	reads are typically O(1) - constant time
+	to maintain this, larger linkedLists (8+) are converted to red-black trees
+		larger items are put on the right side
+		
+			10
+		       /  \
+		      5    12
+		     / \    \
+		    2   8    15
+
+		when we are looking for a larger item, we dont have to traverse the entire left side of the list
+	

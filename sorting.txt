@@ -1,0 +1,23 @@
+Bubble sort
+	basic (not very efficient) sorting algorithm
+	sort numbers from least to greatest
+	good introduction into alorithms in general
+	sortds data by comparing adjacent elements
+	pushes higher number to the end
+	they higher numbers "bubble" up
+		
+	time complexity
+		big o-notation
+			an algebraic equation that represents the time complexity
+		each number (N) is compared to every other number once
+		O(N * N) == O(N^2) == O(N squared) 
+			inefficient
+
+		find the largest integer?
+			start from the beginning
+			store the largest element
+			go through each element and check each one once
+			update largest variable if new element is larger
+			this method has a time complexity of O(N)
+			only goes throught the array and each element once
+		

@@ -1,0 +1,12 @@
+HashSet
+	a class in the collections API
+	stores unique objects - duplicates are not allowed
+	order of elements is not guaranteed
+	no index available unlike list
+	hashset stores values inside of a hashmap
+		set.add("Dan");
+		set.add("Dan"); // does not create a duplicate
+		set.add("Kim");
+		
+		Dan, and Kim are they keys
+		when adding items like this, java creates dummy objects for each key

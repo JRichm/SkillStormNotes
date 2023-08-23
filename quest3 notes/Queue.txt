@@ -1,0 +1,10 @@
+Queue
+	interface in the Collections API in java
+	first in / first out
+	push to the tail
+	pop from the head
+	acts just like a queue in real life
+	allows duplicate elements
+	order of insertion is preserved
+	
+	

@@ -1,0 +1,31 @@
+try block
+	// read a single byte from a file
+	try {
+		FileInputStream f = new FileInputStream("file.txt");
+		f.read();
+		f.close();
+		log.info("Success!");
+
+	} catch(IOException e) {
+		log.info(e)
+	}
+
+finally block
+	run after a try block - regardless if an exception is thrown
+	useful for closing resources like files, network or databse connections, etc.
+		try {
+		} catch(Exception e) {
+		} finally {}
+	
+	not to be confused with the final keyword
+		- variable value cannot be changed
+		- methods cannot be overriden
+		- classes cannot be extended
+
+	try {
+		FileInputStream f = new FileInputStream("file.txt");
+	} catch(IOException e) {
+		log.info(e);
+	} finally {
+		f.close();
+	}

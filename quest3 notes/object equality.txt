@@ -1,0 +1,9 @@
+
+	you can decide when two objects are equivalent
+		java.lang.Object.equals method
+
+			public boolean equals(Object other)
+
+	by default, it checks the memory location
+	override the method to compare object state
+	some data structures require unique objects

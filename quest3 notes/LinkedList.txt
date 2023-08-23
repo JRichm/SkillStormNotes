@@ -1,0 +1,21 @@
+Linked List
+	class in the collections API in java
+	linear series of Nodes
+		node wraps up a value (String, Pizza, etc.)
+
+	"Linked" by a reference to the next node
+	LinkedList is "Doubly-linked"
+		nodes have a previous and next reference
+	
+	allows duplicate elements
+	order of insertion is preserved
+
+	the way linked lists are stored in memory is also different than array lists
+		array lists
+			elements/data is stored next to each other in memory
+			if elements are removed or added, all elements after insertion must be moved so data stays together
+		
+		linkedLists
+			elements do not have to be stored next to each other in memory
+			each item in the list holds onto a reference/pointer to the next and previous item in memory
+			references must be updated when adding or removing elements

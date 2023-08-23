@@ -1,0 +1,10 @@
+Hashcode	
+	used to give a consistent integer that represents the object
+		public int hashCode()
+
+	loved by HashMap, HashSet, and other
+	puts objects into a smaller group to optimize searching
+
+hashcode and equals
+	best practice to use hashcode and equals together
+	

@@ -1,0 +1,11 @@
+stack
+	class in the collections API in java
+	first in / last out
+	push to the tail
+	pop from the tail
+
+	examples
+		stack of playing cards or a stack of plates
+
+	allows for duplicate elements
+	order of insertion is perserved

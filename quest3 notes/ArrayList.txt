@@ -1,0 +1,15 @@
+array List
+	Class in the collections API in java
+	creates an array and provides methods for working with it
+		- called an array backed list
+		= default size is 16
+
+	the size of the array is mutable!
+	it grows 50% larger5 to accomodate more elements
+	allows duplicate elements
+	order of insertion is preserved
+	
+
+	let's say we have an array list that contains 16 items, the default size so it is completely full
+	if we want to add an item to this list, java will increase the size of the list by 50% to accomodate for new items
+	the new size of the list is 24

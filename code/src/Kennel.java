@@ -1,7 +1,7 @@
 
 public class Kennel {
 
-	public static void main(String[] args) {
+	static public void main(String[] args) {
 		Animal[] pets = new Animal[3];
 		pets[0] = new Dog();
 		pets[1] = new Cat();
