@@ -1,0 +1,41 @@
+cartesian product
+	also known as a cross join
+
+	SELECT * FROM film CROSS JOIN actor;
+	SELECT * FROM film, actor;
+		this statement aligns every actor to every movie
+	
+inner join
+	used to join records from two tables upon a particular condition
+	
+	SELECT * FROM city
+	INNER JOIN country
+	ON city.country_id = country.country_id;
+
+		this query will line up the cities to the correct countries
+		
+	often looked at as a ven diagram
+
+	SELECT * FROM address
+	INNER JOIN city
+	ON city.city_id = address.city_id
+	INNER JOIN country
+	on city.country_id = country.country_id;
+
+		multiple inner joins are allowed 
+		this query will return the country and city information related to every address
+
+
+left/right join
+	used to get all of the records from one table and all of the related data from another table
+		customers left join rentals
+			gets all customers from the customers table
+			then gets all of the related data from the rentals table
+			
+			all customers returned, even without a rental
+			if a rental is not related to a customer, it would not be returned
+
+				SELECT * FROM customer
+				LEFT JOIN rental
+				ON customer.customer_id = rental.customer_id;
+

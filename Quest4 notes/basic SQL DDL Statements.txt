@@ -1,0 +1,82 @@
+data definition language
+
+-- CREATE TABLE
+
+	create a new table and assign column data types
+
+		CREATE TABLE hero(
+		   hero_id SMALLINT AUTO_INCREMENT,
+		   hero_name VARCHAR(255),
+		   hit_points SMALLINT,
+		   attack SMALLINT,
+		   defense SMALLINT,
+		   PRIMARY KEY(hero_id)
+		);
+
+			in this example, we set the primary key on the last line of the query
+			we can also set the primary key on the same line we assign data the data type
+				CREATE TABLE hero(
+				   hero_id SMALLINT PRIMARY KEY AUTO_INCREMENT,
+				   ...
+				);
+
+
+-- ALTER TABLE
+
+	edit table after it has been created
+
+	add columns
+		ALTER TABLE hero
+		ADD COLUMN magic_points SMALLINT;
+
+	edit column names
+		ALTER TABLE hero
+		RENAME COLUMN magic_points TO mana_points;
+
+
+-- DROP TABLE
+
+	used to remove a table definition and all the data, indexes, triggers, contraints and permission specifications for that table
+
+		DROP TABLE HERO;
+		 
+	you cannot use transaction control statements like ROLLBACK to revert a table DROP
+	
+	not usually used in a production environment
+
+
+-- CONSTRAINTS
+	
+	used to limit what data can be entered into a column
+
+		ALTER TABLE hero
+		MODIFY hero_name VARCHAR(255) NOT NULL UNIQUE;
+		
+			this query updates the hero_name column to make it so that each time we want add a hero to the table
+			we must enter a hero_name and it must be unique
+
+
+	PRIMARY KEY and FOREIGN_KEYs are also considered constraints
+
+
+	NOT NULL	- 	must contain data
+	UNIQUE		-	no duplicate values
+	UNSIGNED	-	not negative	
+	CHECK (column_name > 0)	makes sure data fits conditional
+	FOREIGN KEY	- 	references other table
+
+		
+		ALTER TABLE hero
+		ADD FOREIGN KEY (customer_id)
+		REFERENCES customer(customer_id);
+
+			this query addes a foreign key relationship to the the hero table on the customer_id column
+			makes it so that it references the customer_id column in the customer table
+
+	most of these constraints can be added in the create table statement.
+
+
+-- REFERENTIAL INTEGRITY
+		
+	if we are referring one record to another, then the parent record must exist
+		we cannot delete countries without deleting the cities referring to those countries first

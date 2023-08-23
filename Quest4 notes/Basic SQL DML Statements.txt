@@ -1,0 +1,66 @@
+-- SELECT
+
+	SELECT * FROM actor;
+
+	   using the star (*) operator we can select all items from a table		
+
+
+-- WHERE	
+
+	SELECT * FROM payment
+	WHERE payment_amount < '2.99';
+
+	   using the WHERE statement, we can refine our search using comparison operators
+		
+-- BETWEEN
+
+	SELECT * FROM film
+	WHERE length
+	BETWEEN 85 AND 115;
+
+	   we can also use the BETWEEN keyword with the WHERE statement to select entries between two specified values
+
+
+-- LIKE
+	
+	SELECT * FROM customer
+	WHERE first_name
+	LIKE 'M%';
+
+	   the like statement allows us to use '%' and '_' as wildcards
+		in the example above, we use the '%' operator to search for all customers whos first name starts with M
+		we can use the '_' operator for single charachter wildcard
+
+	SELECT * FROM customer
+	WHERE first_name
+	LIKE 'MAR_';
+
+		this will return a list of four letter names that start with the letters 'MAR'
+
+
+-- UPDATE
+
+	UPDATE payment
+	SET amount = 5.99
+	WHERE payment_id = 5;
+
+	   we can use the UPDATE statement to update data in a table using the SET keyword to specify a value
+	   always use the where statement, otherwise the query will update every entry
+
+-- DELETE
+
+	DELETE FROM rental
+	WHERE rental_id = 1;
+
+	   we can delete entries from our table using the DELETE keyword
+	   aways use the where statement when deleting entries, otherwise we could delete all entries of a table
+
+
+-- ROLLBACK
+
+	the ROLLBACK statement undos the last DML statement since the last commit
+
+-- COMMIT
+
+	the commit statements commits the changes and sets the changes in stone
+	

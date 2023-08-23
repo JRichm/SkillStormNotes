@@ -3,3 +3,5 @@ database
 	partial dependence
 	repeating group
 	M:N - many-to-many
+	cartesian product
+	dml
