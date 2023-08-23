@@ -1,0 +1,95 @@
+Normalization
+	Normalization reduces data redundancy to save disk space
+	reduces the change of data anomalies (inaccuracies)
+	each stange in the process of normalization is called a normal form
+	most databases use one of the following
+		Second Normal Form (2NF)
+		Third Normal Form (3NF)
+		Boyce-Codd Normal Form (BCNF)
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+1NF  -  defines a key for our tables
+
+	No repeating groups (multi-valued column)
+		only one value per column
+
+	table must define a primary key
+		a unique identifier for a row
+	
+	given a data set, you find candidate keys
+		a reasonable choice for a primary key
+	
+	if none exist, create one - called a surrogate key
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+2NF  -  everything in the table has to be determined by the whole key and not part of it
+
+	functional dependence 
+		one value determines another
+		your birthday determines your age
+		order number determines the date the order was places
+		first name does not determine anything
+
+	composite key	
+		two or more column primary key
+	
+	no partial dependencies
+		a column determined by only part of the primary key
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+3NF  -  columns can only be determined by the key and nothing else
+
+	no transitive dependencies
+		a column determined by a non-key attribute
+	
+	includes derived attributes, which should be calculated
+		your birthday determines your age
+		item price times quantity determines line total
+		sum of line totals determines the order sub-total
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+	edgar f Codd released his landmark paper in 1970
+		a relational model of data for large shared data banks
+
+
+	known as the father of the relational database model
+	Mnemonic for remembering the normal forms
+
+	      +---------+     +---------------+       +-------------+         +------------+
+	      |	The Key	|     |	The Whole Key |	      |	Nothing But |	      |	So Help Me |
+	      |		|     |		      |	      |	  The Key   |	      |	   Codd    |
+	      +---------+     +---------------+       +-------------+         +------------+
+		 1NF		     2NF		    3NF			   BCNF
+		 key	     Partial Dependency	    Transitive Dependency       Boyce-Codd
+
+
+	1nf
+		defines a key for our tables
+
+	2nf
+		everything in the table has to be determined by the whole key and not part of it
+
+	3nf
+		columns can only be determined by the key and nothing else
+
+	bcnf
+		stronger version of third normal form
+		research lookup-tables
+
+
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+
+
+
+
+
+
+
+
+
+

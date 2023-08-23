@@ -1,0 +1,5 @@
+database
+	transitive dependence
+	partial dependence
+	repeating group
+	M:N - many-to-many

@@ -1,0 +1,32 @@
+relational model
+	relational databases organize data into tables
+	a table is also called an entity or a relation
+	table defines the columns
+	columns are also called fields or attributes
+	we add rows to the table, which holds the data
+	rows are also called records or tuples
+		
+	in oop terms:
+		a table is a class
+		a column is an instance variable
+		a row is an instance (object)
+
+	relational means tables can be related to each other somehow
+		1:1 - one-to-one
+			a student can have one identification card
+			each identification card belongs to one student
+
+		1:M - one-to-many
+			a professor can teach many courses
+			a course is only taught by one professor
+		
+		M:M - many-to-many
+			a student can attend many courses
+			each course can have many students
+
+		in reality, a many-to-many relationship doesnt happen in a physical database
+		we ususally use it to map out tables when we are designing tables
+		to achieve a many to many relationship in our database we use a junction table, join table, or associative entity table
+
+		entity-relationship-diagrams are used to design and visualize database management 
+			using crows foot notation
